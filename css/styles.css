@@ -942,13 +942,13 @@ textarea::placeholder {
   margin-left: 12px;
   width: 425px;
   height: 24px;
-}
-
-.checkbox_input {
-  margin-right: 8.38px;
+  flex-direction: column;
 }
 
 .agreement_text {
+  display: flex;
+  align-items: center;
+  margin-left: 8.38px;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -956,30 +956,42 @@ textarea::placeholder {
 }
 
 .agreement {
+  margin-left: 4px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: #2196f3;
+  color: var(--highlight-color);
+}
+
+.checkbox_input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .check_icon {
   position: absolute;
-  top: 5px;
-  left: -0px;
-  width: 8.7px;
-  height: 8.7px;
+  top: 2px;
+  left: -8.38px;
+  width: 16px;
+  height: 15px;
   border: 2px solid var(--first-text-primary);
   border-radius: 2px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox_input:active .check_icon,
-.checkbox_input:checked .check_icon {
+.checkbox_input:active + .check_icon,
+.checkbox_input:checked + .check_icon {
+  background-color: var(--highlight-color);
   background-image: url(/images/icon/check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--highlight-color);
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Кнопка отправить в модальном окне */
 
 .modal_send {
   display: inline-block;

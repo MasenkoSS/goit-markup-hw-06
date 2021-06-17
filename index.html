@@ -437,14 +437,14 @@
         <div class="mailing">
           <h3 class="our_title">Подпишитесь на рассылку</h3>
           <form class="mailing_mail">
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <input type="email" name="mail" placeholder="E-mail" />
             <label for="mail"></label>
 
             <button class="mailing_button" type="submit">
               <link
                 class="mailing_button_text"
                 rel="stylesheet"
-                href=""
+                href="#"
               />Подписаться
               <svg class="icon_mailing" width="24" height="24">
                 <use href="./images/icon/icons.svg#icon-icon-send"></use>
@@ -488,24 +488,22 @@
                 placeholder="Введите текст"
               ></textarea>
             </div>
+
+            <!-- Чекбокс -->
             <div class="checkbox_form">
-              <input
-                class="checkbox_input"
-                type="checkbox"
-                name="agreement"
-                id="agreement"
-              />
-              <label class="agreement_text" for="agreement"
-                >Соглашаюсь с рассылкой и принимаю<span>
-                  <a
-                    class="agreement"
-                    href="https://www.microsoft.com/uk-ua/servicesagreement/"
-                    >Условия договора</a
-                  ></span
-                >
-                <span class="check_icon"></span>
+              <label class="agreement_text">
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="agreement"
+                /><span class="check_icon"></span>
+                Соглашаюсь с рассылкой и принимаю
+                <span>
+                  <a class="agreement" href="#">Условия договора</a>
+                </span>
               </label>
             </div>
+            <!-- Кнопка отправить -->
             <div class="modal_send">
               <button
                 data-modal-open
