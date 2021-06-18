@@ -934,6 +934,7 @@ li .nav-link-tel::before {
 .form_field:focus-within > .icon_form,
 .form_field:hover > .icon_form {
   fill: var(--highlight-color);
+  border-radius: 4px;
 }
 
 .icon_form {
