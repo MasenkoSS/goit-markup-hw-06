@@ -466,20 +466,31 @@
         </button>
         <form class="modal_feedback_form">
           <div class="feedback_form">
+            <label class="feedback_text">Имя</label>
             <div class="form_field">
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name" autofocus />
+              <svg class="icon_form" width="18px" height="18px">
+                <use
+                  href="./images/icon/icons.svg#icon-person-black-form"
+                ></use>
+              </svg>
+              <input type="text" name="name" />
             </div>
+            <label class="feedback_text" for="tel">Телефон</label>
             <div class="form_field">
-              <label for="tel">Телефон</label>
+              <svg class="icon_form" width="18px" height="18px">
+                <use href="./images/icon/icons.svg#icon-phone-black-form"></use>
+              </svg>
               <input type="tel" name="tel" id="tel" />
             </div>
+            <label class="feedback_text" for="mail">Почта</label>
             <div class="form_field">
-              <label for="mail">Почта</label>
+              <svg class="icon_form" width="18px" height="18px">
+                <use href="./images/icon/icons.svg#icon-email-black-form"></use>
+              </svg>
               <input type="email" name="mail" id="mail" />
             </div>
+            <label class="feedback_text" for="comment">Комментарий</label>
             <div class="form_field">
-              <label for="comment">Комментарий</label>
               <textarea
                 class="comment"
                 name="comment"
@@ -488,7 +499,6 @@
                 placeholder="Введите текст"
               ></textarea>
             </div>
-
             <!-- Чекбокс -->
             <div class="checkbox_form">
               <label class="agreement_text">
@@ -496,9 +506,10 @@
                   class="checkbox_input"
                   type="checkbox"
                   name="agreement"
-                /><span class="check_icon"></span>
-                Соглашаюсь с рассылкой и принимаю
-                <span>
+                />
+                <svg class="check_icon">
+                  <use href="./images/icon/icons.svg#icon-check"></use></svg
+                >Соглашаюсь с рассылкой и принимаю<span>
                   <a class="agreement" href="#">Условия договора</a>
                 </span>
               </label>
